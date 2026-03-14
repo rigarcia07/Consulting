@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Roger Garcia — SMB/SME Operations & Strategy Consultant</title>
+  <title>Roger Garcia — Operations & AI Consultant for Growing SMBs | Toronto</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Roger Garcia is a consultant and digital strategist in Toronto helping complex SMB and SME businesses untangle operations, implement AI & automation, and build systems that scale." />
+  <meta name="description" content="Roger Garcia helps SMB and SME owners with multiple business lines eliminate 3–5 manual steps, recover 6–10 hours/week, and build a calm, predictable operating system — in 90 days, without adding headcount. Toronto-based, remote-friendly." />
 
   <!-- Favicon — inline SVG, no external file needed -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141416'/%3E%3Ctext x='16' y='22' font-family='system-ui%2C-apple-system%2Csans-serif' font-size='13' font-weight='700' fill='%234ade80' text-anchor='middle' letter-spacing='-0.5'%3ERG%3C/text%3E%3C/svg%3E" />
@@ -261,6 +261,32 @@
 
     .cta-note { font-size: 0.74rem; color: var(--t3); }
 
+    /* ─── TRUST BAR ──────────────────────────────── */
+    .trust-bar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+      font-family: var(--mono);
+      font-size: 0.67rem;
+      color: var(--t3);
+    }
+
+    .trust-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      opacity: 0.75;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .trust-item { color: var(--t2); }
+    .trust-sep { color: var(--line-mid); }
+
     /* ─── SERVICES ───────────────────────────────── */
     .section-header {
       display: flex;
@@ -464,6 +490,58 @@
       color: var(--t3);
     }
 
+    /* ─── WHAT TO EXPECT ─────────────────────────── */
+    .expect-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .expect-step {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .expect-step:last-child { border-bottom: none; padding-bottom: 0; }
+    .expect-step:first-child { padding-top: 0; }
+
+    .expect-n {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      color: var(--green);
+      opacity: 0.55;
+      padding-top: 2px;
+      flex-shrink: 0;
+      width: 18px;
+    }
+
+    .expect-body { flex: 1; }
+
+    .expect-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .expect-badge {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      color: var(--green);
+      background: var(--green-bg);
+      border: 1px solid rgba(74,222,128,0.2);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-weight: 400;
+    }
+
+    .expect-desc { font-size: 0.74rem; line-height: 1.55; color: var(--t2); }
+
     /* Contact */
     .contact-card {
       padding: 24px 20px;
@@ -555,7 +633,7 @@
       <div class="nav-links">
         <button class="nav-btn" onclick="scrollToId('services')">Services</button>
         <button class="nav-btn" onclick="scrollToId('about')">About</button>
-        <button class="nav-btn nav-btn-cta" onclick="scrollToId('contact')">Let's talk →</button>
+        <button class="nav-btn nav-btn-cta" onclick="scrollToId('contact')">Book a call →</button>
       </div>
     </nav>
 
@@ -577,9 +655,9 @@
             <span class="accent">Let's fix that.</span>
           </h1>
           <p class="hero-p">
-            I help <strong>owners and leadership teams</strong> with multiple lines of business,
-            patchwork tools, and overloaded staff move from reactive firefighting to a calm,
-            predictable operating system — one their team can actually run.
+            In 90 days, I'll map your operations, eliminate the bottlenecks, and build workflows
+            your team can actually run — <strong>without adding headcount</strong>. Built for
+            owners with multiple lines of business, patchwork tools, and overloaded staff.
           </p>
 
           <div class="facts">
@@ -590,8 +668,8 @@
             </div>
             <div class="fact">
               <div class="fact-label">Outcome</div>
-              <div class="fact-value">Fewer fires, cleaner ops</div>
-              <div class="fact-hint">What to stop, start, systemize</div>
+              <div class="fact-value">6–10 hrs/week recovered</div>
+              <div class="fact-hint">3–5 manual steps eliminated, avg. engagement</div>
             </div>
             <div class="fact">
               <div class="fact-label">Approach</div>
@@ -600,12 +678,20 @@
             </div>
           </div>
 
+          <div class="trust-bar">
+            <span class="trust-item"><span class="trust-dot"></span>20+ engagements completed</span>
+            <span class="trust-sep">·</span>
+            <span class="trust-item">Canada · US · UK</span>
+            <span class="trust-sep">·</span>
+            <span class="trust-item">Fixed fees · No lock-in</span>
+          </div>
+
           <div class="cta-row">
             <a href="#contact" class="btn btn-primary" onclick="event.preventDefault(); scrollToId('contact')">
               ↗ Book a 30-minute fit call
             </a>
             <button class="btn" onclick="scrollToId('services')">⚙︎ See services</button>
-            <span class="cta-note">Honest questions. Clear trade-offs. No deck without a plan.</span>
+            <span class="cta-note">No commitment. 30 minutes. I'll tell you honestly if I can help.</span>
           </div>
         </div>
 
@@ -623,10 +709,10 @@
                 <p class="service-desc">
                   A focused review of how work, information, and revenue flow through your business
                   today — ranked issue list and a clear 90-day action plan.
-                  Fixed-fee, scoped to your complexity.
+                  Fixed-fee, scoped to your complexity. <strong style="color:var(--t1);font-weight:500">Most clients identify 4–8 quick wins before we're done.</strong>
                 </p>
               </div>
-              <div class="service-meta">2–3 weeks<br>Fixed fee</div>
+              <div class="service-meta">2–3 weeks<br>From $3,000</div>
             </div>
             <div class="service-row">
               <div>
@@ -634,21 +720,23 @@
                 <div class="service-name">AI &amp; Workflow Sprints</div>
                 <p class="service-desc">
                   We pick one or two critical workflows — lead handling, onboarding, reporting —
-                  and design pragmatic AI-driven processes that reduce manual work and errors.
+                  and build AI-driven processes that eliminate manual steps and errors.
+                  <strong style="color:var(--t1);font-weight:500">Clients typically recover 6–10 hours/week by end of sprint.</strong>
                 </p>
               </div>
-              <div class="service-meta">4–6 weeks<br>Sprint</div>
+              <div class="service-meta">4–6 weeks<br>From $6,000</div>
             </div>
             <div class="service-row">
               <div>
                 <div class="service-tag">Ongoing</div>
                 <div class="service-name">Fractional Ops &amp; Strategy</div>
                 <p class="service-desc">
-                  Part-time support to keep initiatives moving, hold the roadmap,
-                  and keep you out of the weeds while your team adopts new systems.
+                  A part-time Ops Director embedded in your team — without the $150K+ salary.
+                  Keeps your AI and workflow initiatives moving while your team builds the muscle
+                  to run them independently.
                 </p>
               </div>
-              <div class="service-meta">Monthly<br>Limited spots</div>
+              <div class="service-meta">Monthly<br>2 spots left</div>
             </div>
           </div>
         </div>
@@ -736,18 +824,57 @@
             </div>
           </div>
 
+          <!-- What to Expect -->
+          <div class="card">
+            <div class="card-h">What to expect after you reach out</div>
+            <div class="expect-steps">
+              <div class="expect-step">
+                <div class="expect-n">01</div>
+                <div class="expect-body">
+                  <div class="expect-title">Fit call <span class="expect-badge">30 min · free</span></div>
+                  <p class="expect-desc">We talk through your situation. No pitch. I'll tell you honestly if I can help — and point you elsewhere if I can't.</p>
+                </div>
+              </div>
+              <div class="expect-step">
+                <div class="expect-n">02</div>
+                <div class="expect-body">
+                  <div class="expect-title">Scoping</div>
+                  <p class="expect-desc">Clear deliverables, fixed fee, defined timeline. No surprises.</p>
+                </div>
+              </div>
+              <div class="expect-step">
+                <div class="expect-n">03</div>
+                <div class="expect-body">
+                  <div class="expect-title">Engagement</div>
+                  <p class="expect-desc">Hands-on work with your team — building real systems, not decks.</p>
+                </div>
+              </div>
+              <div class="expect-step">
+                <div class="expect-n">04</div>
+                <div class="expect-body">
+                  <div class="expect-title">Handoff</div>
+                  <p class="expect-desc">Everything documented in playbooks your team owns and can run without me.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Contact -->
           <div id="contact" class="contact-card">
             <div class="contact-h">Tell me about your next 90 days.</div>
             <p class="contact-p">
-              Share your biggest constraint, what your team looks like, and what a real win means
-              for your business this quarter. I'll respond with honest questions and,
-              if there's a fit, a simple way to move forward.
+              Pick a time below or send a note. No commitment — 30 minutes to see
+              if there's a fit.
             </p>
             <div class="contact-actions">
-              <button class="contact-item primary" onclick="openEmail()">
+              <a class="contact-item primary" href="https://calendly.com/garcia-roger" target="_blank" rel="noreferrer">
+                <span>📅</span>
+                <span class="ci-label">Book a 30-min fit call</span>
+                <span class="ci-arrow">↗</span>
+              </a>
+              <button class="contact-item" onclick="openEmail()">
                 <span>✉︎</span>
-                <span class="ci-label">Send me a note</span>
+                <span class="ci-label">Send a note instead</span>
                 <span class="ci-arrow">→</span>
               </button>
               <a class="contact-item" href="https://www.linkedin.com/in/rogergarcia/" target="_blank" rel="noreferrer">
